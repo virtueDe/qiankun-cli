@@ -1,0 +1,28 @@
+{
+  "name": "qiankun-cli",
+  "version": "1.0.0",
+  "description": "qiankun  vue ",
+  "main": "index.js",
+  "scripts": {
+    "examples:install": "npm-run-all --serial install:*",
+    "examples:start": "npm-run-all --parallel start:*",
+    "install:main": "cd main-vue && npm install",
+    "start:main": "cd main-vue && npm run start",
+    "install:vue": "cd vue-cli && npm install",
+    "start:cue": "cd vue-cli && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/virtueDe/qiankun-cli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/virtueDe/qiankun-cli/issues"
+  },
+  "homepage": "https://github.com/virtueDe/qiankun-cli#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
