@@ -11,6 +11,7 @@ module.exports = {
   outputDir: 'dist',
   assetsDir: 'static',
   filenameHashing: true,
+  lintOnSave: false,
   devServer: {
     // host: '0.0.0.0',
     hot: true,
@@ -20,9 +21,9 @@ module.exports = {
       warnings: false,
       errors: true,
     },
-    // headers: {
-    //   'Access-Control-Allow-Origin': '*',
-    // },
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+    },
   },
   // 自定义webpack配置
   configureWebpack: {
